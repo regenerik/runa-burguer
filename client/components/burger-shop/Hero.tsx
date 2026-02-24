@@ -7,39 +7,44 @@ const HERO_BG = "https://cdn.builder.io/api/v1/image/assets%2Fadca80ee8fc74b4799
 
 export function Hero() {
   const { cartCount } = useCartStore();
-
+  const scrollToMenu = () => {
+    const menuSection = document.getElementById('menu'); // Asegúrate que tu sección de menú tenga id="menu"
+    if (menuSection) {
+      menuSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   return (
     <section className="relative min-h-[90vh] md:min-h-screen pt-24 pb-12 overflow-hidden flex items-center">
       {/* Background Image with Overlay */}
-      <div 
+      <div
         className="absolute inset-0 z-0 bg-cover bg-right md:bg-center transition-all duration-700"
         style={{ backgroundImage: `url('${HERO_BG}')` }}
       >
         {/* Dark Gradients for Text Legibility */}
         <div className="absolute inset-0 bg-gradient-to-r from-background via-background/60 to-transparent md:via-background/40"></div>
         <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
-        
+
         {/* Texture layer */}
         <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/dark-matter.png')] opacity-30 pointer-events-none"></div>
       </div>
-      
+
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-3xl space-y-6 text-center md:text-left">
           {/* Banner parts - Ituzaingó tag */}
           <div className="inline-block bg-[#D9A05B]/20 border border-[#D9A05B]/40 text-[#D9A05B] px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wider backdrop-blur-sm animate-fade-in">
             Ratti 295, Ituzaingó • Takeaway & Envío
           </div>
-          
+
           <h1 className="text-5xl md:text-8xl font-black text-white leading-[0.9] drop-shadow-2xl">
             Smash burgers <br />
             <span className="text-primary drop-shadow-[0_2px_10px_rgba(238,177,53,0.3)]">marcadas a fuego</span>
           </h1>
-          
+
           <p className="text-white/90 text-lg md:text-xl max-w-md mx-auto md:mx-0 font-medium leading-relaxed drop-shadow-md">
-            Pedí por WhatsApp. Respuesta rápida. <br className="hidden md:block" />
-            Retiro o envío en la zona.
+            Pedí por WhatsApp y te lo llevamos. <br className="hidden md:block" />
+            O lo retirás por nuestro local.
           </p>
-          
+
           <div className="flex flex-col sm:flex-row items-center gap-4 justify-center md:justify-start pt-4">
             <a
               href={getWhatsAppLink()}
@@ -55,8 +60,17 @@ export function Hero() {
                 </span>
               )}
             </a>
+
+<button
+  onClick={scrollToMenu}
+  className="w-fit bg-[#D9A05B]/20 border border-[#D9A05B]/40 text-[#D9A05B] px-6 py-2 rounded-full text-sm font-black uppercase tracking-widest backdrop-blur-sm transition-all hover:bg-[#D9A05B]/30 active:scale-95 animate-fade-in mx-auto md:mx-0 flex items-center gap-2"
+>
+  <span className="text-lg">⬇</span>
+  Ver menú
+  <span className="text-lg">⬇</span>
+</button>
           </div>
-          
+
           {/* Smash, Envío and Retiro badges */}
           <div className="flex flex-wrap items-center gap-4 pt-6 justify-center md:justify-start">
             <Badge icon={<Flame size={18} />} text="Smash" />
@@ -65,7 +79,7 @@ export function Hero() {
           </div>
         </div>
       </div>
-      
+
       {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce opacity-50 hidden md:block">
         <div className="w-1 h-12 bg-gradient-to-b from-primary to-transparent rounded-full"></div>

@@ -7,7 +7,7 @@ export function MenuSection() {
   const { burgers } = useBurgerStore();
 
   return (
-    <section id="menu" className="py-24 bg-card/50 scroll-mt-20">
+    <section id="menu" className="py-24 bg-card/50 scroll-mt-6">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl md:text-5xl font-heading text-center text-white mb-16">
           Nuestro menú
