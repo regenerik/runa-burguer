@@ -88,7 +88,7 @@ export default function Main() {
             </a>
 
             {/* Encuesta de satisfacci\u00f3n */}
-            <a
+            {/* <a
               href={googleReviewUrl}
               target="_blank"
               rel="noopener noreferrer"
@@ -101,8 +101,19 @@ export default function Main() {
                 <span className="text-lg">Encuesta de satisfacción</span>
               </div>
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="opacity-50 group-hover:opacity-100 transition-opacity"><path d="m9 18 6-6-6-6"/></svg>
-            </a>
-
+            </a> */}
+            <Link
+              to="/form"
+              className="group flex items-center justify-between w-full px-6 py-4 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 rounded-2xl text-white font-bold transition-all hover:scale-[1.02]"
+            >
+              <div className="flex items-center gap-3">
+                <div className="p-3 bg-white/10 rounded-xl group-hover:bg-white/20 transition-colors">
+                  <ClipboardList size={24} className="text-white/70" />
+                </div>
+                <span className="text-lg">Ganá un lindo 💲descuento💲 llenando una breve encuesta</span>
+              </div>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="opacity-50 group-hover:opacity-100 transition-opacity"><path d="m9 18 6-6-6-6"/></svg>
+            </Link>
             {/* Instagram */}
             <a
               href="https://instagram.com/runa.burger"
