@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 export default function Main() {
   const googleMapsUrl = "https://www.google.com/maps/search/?api=1&query=Ratti+295,+Ituzaing\u00f3";
-  const googleReviewUrl = "https://g.page/r/YOUR_GOOGLE_BUSINESS_ID/review";
+  const googleReviewUrl = "https://g.page/r/01135316422357078055/review";
   const HERO_BG = "https://cdn.builder.io/api/v1/image/assets%2Fadca80ee8fc74b4799929f9b24a54891%2Fa0d7669be6284f8faf969db0f4292eb3?format=webp&width=1600&height=1000";
 
   return (
@@ -37,7 +37,7 @@ export default function Main() {
          
 
           <h1 className="text-4xl md:text-5xl font-heading text-white text-center mb-4 tracking-tighter animate-fade-in">
-            <span className="text-primary">RUNA</span> TE ESPERA
+            <span className="text-primary">RUNA</span> ITUZAINGÓ
           </h1>
 
           <div className="w-full space-y-3 animate-fade-in delay-100">
