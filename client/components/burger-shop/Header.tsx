@@ -49,9 +49,11 @@ export function Header() {
             />
           </Link>
           <nav className="hidden md:flex items-center gap-6">
-            <a href="#menu" className="text-sm font-medium hover:text-primary transition-colors">
-              Menú
-            </a>
+            {location.pathname !== "/menu" && (
+              <Link to="/menu" className="text-sm font-medium hover:text-primary transition-colors">
+                Menú
+              </Link>
+            )}
             <div className="relative">
               <button
                 onMouseEnter={() => setShowTooltip(true)}

@@ -12,11 +12,11 @@ export default function Index() {
       <div className="fixed inset-0 bg-radial-gradient from-primary/5 via-transparent to-transparent opacity-30 pointer-events-none -z-10"></div>
       <Header />
       <main>
-        <Hero />
+        {/* <Hero /> */}
         <MenuSection />
         <ExtrasSection />
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
