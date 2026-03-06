@@ -110,7 +110,7 @@ export default function Main() {
                 <div className="p-3 bg-white/10 rounded-xl group-hover:bg-white/20 transition-colors">
                   <ClipboardList size={24} className="text-white/70" />
                 </div>
-                <span className="text-lg">Ganá un lindo 💲descuento💲 llenando una breve encuesta</span>
+                <span className="text-lg">Encuesta de satisfacción. Completala y obtené un descuento Runa!💲</span>
               </div>
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="opacity-50 group-hover:opacity-100 transition-opacity"><path d="m9 18 6-6-6-6"/></svg>
             </Link>
