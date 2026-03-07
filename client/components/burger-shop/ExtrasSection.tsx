@@ -3,14 +3,14 @@ import { BurgerActions } from "@/lib/flux/Actions";
 import { Plus } from "lucide-react";
 
 const EXTRAS = [
-  { name: "Papas fritas", price: 2500 },
-  { name: "Papas con cheddar", price: 3200 },
-  { name: "Aros de cebolla", price: 2800 },
+  { name: "Papas fritas", price: 0 },
+  { name: "Papas con cheddar", price: 0 },
+  { name: "Aros de cebolla", price: 0 },
 ];
 
 const BEBIDAS = [
-  { name: "Lata, linea Pepsi", price: 1500 },
-  { name: "Agua", price: 1200 },
+  { name: "Lata, linea Pepsi", price: 0 },
+  { name: "Agua", price: 0 },
 ];
 
 export function ExtrasSection() {
