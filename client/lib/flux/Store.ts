@@ -2,8 +2,8 @@ import { AppDispatcher } from "./Dispatcher";
 
 import arosDeCebollaImg from "../../imgs/Aros de cebolla.jpeg";
 import baconImg from "../../imgs/Bacon.jpeg";
-import baconDobleImg from "../../imgs/Bacon doble.jpeg";
-import baconTripleImg from "../../imgs/Bacon triple.jpeg";
+import baconDobleImg from "../../imgs/bacon doble.jpeg";
+import baconTripleImg from "../../imgs/bacon triple.jpeg";
 import berkaImg from "../../imgs/Berka.jpeg";
 import bocaditosEspinacaImg from "../../imgs/Bocaditos de espinaca.jpeg";
 import bocaditosPolloImg from "../../imgs/Bocaditos de pollo.jpeg";
