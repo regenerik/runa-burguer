@@ -57,7 +57,7 @@ export function ExtrasSection() {
           </div>
 
           {/* Bebidas */}
-          <div className="space-y-8">
+          {/* <div className="space-y-8">
             <h2 className="text-3xl font-heading text-white border-b border-primary/20 pb-4 inline-block">
               Bebidas
             </h2>
@@ -82,7 +82,7 @@ export function ExtrasSection() {
                 </div>
               ))}
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
