@@ -152,8 +152,8 @@
       isPopular: false,
     },
     {
-      id: "picada-gebo-runa",
-      name: "Picada Gebo Runa",
+      id: "picada-runa",
+      name: "Picada Runa",
       description: "6x bastones de mozzarella, 6x aros de cebolla, 6x bocaditos de espinaca y queso, 6x.",
       price: 18000,
       image: picadaGeboImg,
