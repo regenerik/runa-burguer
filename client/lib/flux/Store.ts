@@ -164,7 +164,7 @@
       id: "bastones-de-muzza-runa",
       name: "Bastones de Muzzarella Runa",
       description: "Crujientes bastones de muzzarella x6.",
-      price: 6000,
+      price: 7500,
       image: bastonesDeMuzzaImg,
       isPopular: false,
     },
