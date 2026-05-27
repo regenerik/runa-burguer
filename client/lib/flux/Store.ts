@@ -20,6 +20,7 @@
   import sowiloImg from "../../imgs/Sowilo.jpeg";
   import tiwazImg from "../../imgs/Tiwaz.jpeg";
   import wunjoImg from "../../imgs/Wunjo.jpeg";
+  import bastonesDeMuzzaImg from "../../imgs/Bastones de muzza.jpeg";
 
   type Burger = {
     id: string;
@@ -34,7 +35,7 @@
     {
       id: "runa-cheese-burger",
       name: "Runa cheese burger",
-      description: "Pan brioche, medallón, doble cheddar milkaut , papas fritas .",
+      description: "Pan brioche, medallón 120g, doble cheddar. Acompañada de papas sazonadas.",
       price: 9499,
       image: cheeseBurgerImg,
       isPopular: false,
@@ -42,7 +43,7 @@
     {
       id: "runa-cheese-burger-doble",
       name: "Runa cheese burger doble",
-      description: "Pan brioche, doble medallón, doble cheddar milkaut, papas fritas.",
+      description: "Pan brioche, doble medallón 120g, triple cheddar. Acompañada de papas sazonadas.",
       price: 11999,
       image: cheeseBurguerDobleImg,
       isPopular: false,
@@ -50,7 +51,7 @@
     {
       id: "runa-cheese-burger-triple",
       name: "Runa cheese burger triple",
-      description: "Pan brioche, triple medallón, doble cheddar milkaut, papas fritas.",
+      description: "Pan brioche, triple medallón 120g, cuadruple cheddar. Acompañada de papas sazonadas.",
       price: 14499,
       image: cheeseBurgerTripleImg,
       isPopular: false,
@@ -58,7 +59,7 @@
     {
       id: "runa-bacon",
       name: "Runa Bacon",
-      description: "Pan brioche, medallón, doble cheddar milkaut, bacon, papas fritas.",
+      description: "Pan brioche, medallón 120g, doble cheddar, bacon crujiente. Acompañada de papas sazonadas.",
       price: 11500,
       image: baconImg,
       isPopular: false,
@@ -66,7 +67,7 @@
     {
       id: "runa-doble-bacon",
       name: "Runa doble Bacon",
-      description: "Pan brioche, doble medallón, doble cheddar milkaut, bacon, papas fritas.",
+      description: "Pan brioche, doble medallón 120g, triple cheddar, bacon crujiente. Acompañada de papas sazonadas.",
       price: 14000,
       image: baconDobleImg,
       isPopular: false,
@@ -74,7 +75,7 @@
     {
       id: "runa-triple-bacon",
       name: "Runa triple Bacon",
-      description: "Pan brioche, triple medallón, doble cheddar milkaut, bacon, papas fritas.",
+      description: "Pan brioche, triple medallón 120g, cuadruple cheddar, bacon crujiente. Acompañada de papas sazonadas.",
       price: 16500,
       image: baconTripleImg,
       isPopular: false,
@@ -82,7 +83,7 @@
     {
       id: "runa-tiwaz",
       name: "Runa Tiwaz",
-      description: "Pan brioche, doble medallón, provoleta, cebolla y morrón salteado, cebolla crispy, bacon, salsa bbq.",
+      description: "Pan brioche, doble medallón 120g, provoleta crugiente, cebolla y morrón salteado, cebolla crispy, bacon y salsa bbq. Acompañada de papas sazonadas.",
       price: 16799,
       image: tiwazImg,
       isPopular: false,
@@ -90,7 +91,7 @@
     {
       id: "runa-gebo",
       name: "Runa Gebo",
-      description: "Pan brioche, medallón, doble cheddar milkaut, cebolla crispy, pepinillos, salsa mil islas, papas fritas.",
+      description: "Pan brioche, medallón 120g, doble cheddar, cebolla crispy, pepinillos agridulces y salsa mil islas. Acompañada de papas sazonadas.",
       price: 16799,
       image: geboImg,
       isPopular: false,
@@ -98,7 +99,7 @@
     {
       id: "runa-kenaz",
       name: "Runa Kenaz",
-      description: "Pan brioche, doble medallón, queso provolone nonna pia, morrón asado, aros de cebolla, salsa bbq, papas fritas.",
+      description: "Pan brioche, doble medallón 120g, provoleta crugiente, morrón asado, aros de cebolla y salsa bbq. Acompañada de papas sazonadas.",
       price: 17699,
       image: kenazImg,
       isPopular: false,
@@ -106,7 +107,7 @@
     {
       id: "runa-raido",
       name: "Runa Raido",
-      description: "Pan brioche, medallón, queso tybo, queso azul, cebolla caramelizada, rúcula, papas fritas.",
+      description: "Pan brioche, medallón 120g, queso tybo, queso azul, cebolla caramelizada y rúcula. Acompañada de papas sazonadas.",
       price: 14999,
       image: raidoImg,
       isPopular: false,
@@ -114,7 +115,7 @@
     {
       id: "runa-wunjo",
       name: "Runa Wunjo",
-      description: "Pan brioche, medallón, doble cheaddar milkaut, lechuga, tomates cherry confitados, salsa alioli, papas fritas.",
+      description: "Pan brioche, medallón 120g, doble cheaddar, lechuga, cherrys confitados y salsa alioli. Acompañada de papas sazonadas.",
       price: 15990,
       image: wunjoImg,
       isPopular: false,
@@ -122,7 +123,7 @@
     {
       id: "runa-sowilo",
       name: "Runa Sowilo",
-      description: "Pan brioche, doble medallón, doble cheddar milkaut, cebolla caramelizada, cebolla crispy, huevo a la plancha, bacon, honey mustard, papas fritas.",
+      description: "Pan brioche, doble medallón 120g, triple cheddar, cebolla caramelizada, cebolla crispy, huevo a la plancha, bacon crujiente y mostaza honey. Acompañada de papas sazonadas.",
       price: 18599,
       image: sowiloImg,
       isPopular: false,
@@ -130,7 +131,7 @@
     {
       id: "runa-berka",
       name: "Runa Berka",
-      description: "Pan brioche, medallón, doble cheddar milkaut, cebolla caramelizada, bastones de muzza, salsa bbq, papas fritas.",
+      description: "Pan brioche, medallón 120g, doble cheddar, cebolla caramelizada, bastones de muzza, salsa bbq. Acompañada de papas sazonadas.",
       price: 17699,
       image: berkaImg,
       isPopular: false,
@@ -138,7 +139,7 @@
     {
       id: "runa-manaz",
       name: "Runa Manaz",
-      description: "Pan brioche, medallón con cebolla morada, provolone, lechuga, tomates cherry confitados, huevo a la plancha, papas fritas.",
+      description: "Pan brioche, medallón 120g oklahoma, provoleta crujiente, lechuga, cherrys confitados y huevo a la plancha. Acompañada de papas sazonadas.",
       price: 17800,
       image: manazImg,
       isPopular: false,
@@ -146,7 +147,7 @@
     {
       id: "runa-pollo-crispy",
       name: "Runa Pollo Crispy",
-      description: "Pan brioche, medallón pollo crispy, lechuga, tomates cherry confitados, salsa mil islas, papas fritas.",
+      description: "Pan brioche, pollo crispy, lechuga, cherrys confitados y salsa mil islas. Acompañada de papas sazonadas.",
       price: 15899,
       image: crispyImg,
       isPopular: false,
@@ -154,15 +155,23 @@
     {
       id: "picada-runa",
       name: "Picada Runa",
-      description: "6x bastones de mozzarella, 6x aros de cebolla, 6x bocaditos de espinaca y queso, 6x.",
+      description: "Nuggets de pollo x6, Aros de cebolla x6, Bocaditos de espinaca y queso x6, Bastones de muzzarella x6 y Doble porción de papas sazonadas.",
       price: 18000,
       image: picadaGeboImg,
       isPopular: false,
     },
     {
+      id: "bastones-de-muzza-runa",
+      name: "Bastones de Muzzarella Runa",
+      description: "Crujientes bastones de muzzarella x6.",
+      price: 6000,
+      image: bastonesDeMuzzaImg,
+      isPopular: false,
+    },
+    {
       id: "aros-de-cebolla-runa",
       name: "Aros de cebolla Runa",
-      description: "Crujientes aros de cebolla.",
+      description: "Crujientes aros de cebolla x6.",
       price: 5500,
       image: arosDeCebollaImg,
       isPopular: false,
@@ -177,8 +186,8 @@
     },
     {
       id: "bocaditos-de-pollo-runa",
-      name: "Bocaditos de pollo Runa",
-      description: "Crujientes bocaditos de pollo rebozados.",
+      name: "Nuggets de pollo Runa",
+      description: "Crujientes nuggets de pollo x6.",
       price: 5500,
       image: bocaditosPolloImg,
       isPopular: false,
@@ -186,7 +195,7 @@
     {
       id: "bocaditos-de-espinaca-runa",
       name: "Bocaditos de espinaca Runa",
-      description: "Crujientes bocaditos de espinaca y queso.",
+      description: "Crujientes bocaditos de espinaca y queso x6.",
       price: 6000,
       image: bocaditosEspinacaImg,
       isPopular: false,
