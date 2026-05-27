@@ -12,8 +12,14 @@ const EXTRAS = [
 ];
 
 const BEBIDAS = [
-  { name: "Proximamente", price: 0 },
-  { name: "Proximamente", price: 0 },
+  { name: "COCA 600cc", price: 2500 },
+  { name: "COCA Zero 600cc", price: 2500 },
+  { name: "Cerveza Stella Artois 473cc", price: 3500 },
+  { name: "Cerveza Amstel Lager rubia 473cc", price: 3500 },
+  { name: "Cerveza Corona porron 330cc", price: 3500 },
+  { name: "Cerveza Andes Roja 473cc", price: 3500 },
+  { name: "Cerveza Andes IPA Andina 473cc", price: 3500 },
+  { name: "Cerveza Quilmes Stout 473cc", price: 3500 },
 ];
 
 export function ExtrasSection() {
@@ -21,6 +27,35 @@ export function ExtrasSection() {
     <section className="py-24 bg-background">
       <div className="container mx-auto px-4 max-w-4xl">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
+
+          {/* Bebidas */}
+          <div className="space-y-8">
+            <h2 className="text-3xl font-heading text-white border-b border-primary/20 pb-4 inline-block">
+              Bebidas
+            </h2>
+            <div className="space-y-6">
+              {BEBIDAS.map((bebida) => (
+                <div key={bebida.name} className="flex items-center justify-between group">
+                  <div className="flex items-center gap-2">
+                    <button
+                      onClick={() => BurgerActions.addBurgerToCart({ id: bebida.name.toLowerCase().replace(/\s+/g, '-'), name: bebida.name, price: bebida.price })}
+                      className="p-1 bg-primary/20 hover:bg-primary text-primary hover:text-primary-foreground rounded-full transition-all active:scale-90"
+                    >
+                      <Plus size={14} strokeWidth={3} />
+                    </button>
+                    <span className="text-white/80 font-medium group-hover:text-primary transition-colors">
+                      {bebida.name}
+                    </span>
+                  </div>
+                  <div className="flex-1 border-b border-dotted border-white/20 mx-4 mt-2"></div>
+                  <span className="text-primary font-bold">
+                    ${bebida.price.toLocaleString('es-AR')}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+
           {/* Extras */}
           <div className="space-y-8">
             <h2 className="text-3xl font-heading text-white border-b border-primary/20 pb-4 inline-block">
@@ -56,33 +91,7 @@ export function ExtrasSection() {
             </div>
           </div>
 
-          {/* Bebidas */}
-          {/* <div className="space-y-8">
-            <h2 className="text-3xl font-heading text-white border-b border-primary/20 pb-4 inline-block">
-              Bebidas
-            </h2>
-            <div className="space-y-6">
-              {BEBIDAS.map((bebida) => (
-                <div key={bebida.name} className="flex items-center justify-between group">
-                  <div className="flex items-center gap-2">
-                    <button
-                      onClick={() => BurgerActions.addBurgerToCart({ id: bebida.name.toLowerCase().replace(/\s+/g, '-'), name: bebida.name, price: bebida.price })}
-                      className="p-1 bg-primary/20 hover:bg-primary text-primary hover:text-primary-foreground rounded-full transition-all active:scale-90"
-                    >
-                      <Plus size={14} strokeWidth={3} />
-                    </button>
-                    <span className="text-white/80 font-medium group-hover:text-primary transition-colors">
-                      {bebida.name}
-                    </span>
-                  </div>
-                  <div className="flex-1 border-b border-dotted border-white/20 mx-4 mt-2"></div>
-                  <span className="text-primary font-bold">
-                    ${bebida.price.toLocaleString('es-AR')}
-                  </span>
-                </div>
-              ))}
-            </div>
-          </div> */}
+
         </div>
       </div>
     </section>
