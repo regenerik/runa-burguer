@@ -156,7 +156,7 @@
       id: "picada-runa",
       name: "Picada Runa",
       description: "Nuggets de pollo x6, Aros de cebolla x6, Bocaditos de espinaca y queso x6, Bastones de muzzarella x6 y Doble porción de papas sazonadas.",
-      price: 25000,
+      price: 18000,
       image: picadaGeboImg,
       isPopular: false,
     },
