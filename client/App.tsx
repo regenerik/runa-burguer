@@ -11,6 +11,9 @@ import NotFound from "./pages/NotFound";
 import Main from "./pages/Main";
 import Form from "./pages/Form";
 import Cupon from "./pages/Cupon";
+import NewMenu from "./pages/NewMenu";
+import AdminProducts from "./pages/AdminProducts";
+import AdminProductEditor from "./pages/AdminProductEditor";
 
 const queryClient = new QueryClient();
 
@@ -22,6 +25,9 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/menu" element={<Index />} />
+          <Route path="/new-menu" element={<NewMenu />} />
+          <Route path="/admin" element={<AdminProducts />} />
+          <Route path="/admin/products/:id" element={<AdminProductEditor />} />
           <Route path="/" element={<Main />} />
                       <Route path="/form" element={<Form />} />
             <Route path="/cupon" element={<Cupon />} />

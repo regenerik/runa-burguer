@@ -4,6 +4,7 @@ import { Footer } from "@/components/burger-shop/Footer";
 import { MessageCircle, MapPin, ClipboardList, Instagram, Utensils } from "lucide-react";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 import { Link } from "react-router-dom";
+import { AdminLoginDialog } from "@/components/burger-shop/AdminLoginDialog";
 
 export default function Main() {
   const googleMapsUrl = "https://www.google.com/maps/search/?api=1&query=Ratti+295,+Ituzaing\u00f3";
@@ -27,6 +28,7 @@ export default function Main() {
       </div>
 
       <Header />
+      <AdminLoginDialog />
 
       <main className="flex-1 flex flex-col items-center justify-center px-4 py-12 relative overflow-hidden z-10">
         {/* Decorative background element */}
