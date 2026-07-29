@@ -202,10 +202,16 @@ export function NewMenuSection() {
             Nuestro menu
           </h2>
           {loading ? (
-            <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
-              {[1, 2, 3].map((item) => (
-                <div key={item} className="h-[520px] animate-pulse rounded-2xl bg-white/5" />
-              ))}
+            <div className="flex min-h-[58vh] flex-col items-center justify-center text-center">
+              <img
+                src="/burger-ensamblando.svg"
+                alt="Hamburguesa ensamblandose"
+                className="h-32 w-32 md:h-40 md:w-40"
+                draggable={false}
+              />
+              <p className="mt-5 text-sm font-bold uppercase tracking-wide text-primary">
+                Esto nos toma solo 2 segundos
+              </p>
             </div>
           ) : isEmpty ? (
             <div className="mx-auto max-w-xl rounded-2xl border border-white/10 bg-white/[0.03] p-8 text-center">

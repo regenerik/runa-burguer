@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+<style>
+  .layer{animation:drop 1.8s cubic-bezier(.2,.8,.25,1) infinite;transform-origin:center}
+  .l2{animation-delay:.12s}.l3{animation-delay:.24s}.l4{animation-delay:.36s}.l5{animation-delay:.48s}.l6{animation-delay:.60s}
+  @keyframes drop{0%,12%{transform:translateY(-95px);opacity:0}45%,84%{transform:translateY(0);opacity:1}100%{transform:translateY(8px);opacity:0}}
+  .o{stroke:#2d2019;stroke-width:4;stroke-linejoin:round}
+</style>
+<g class="layer l1"><rect class="o" x="60" y="182" width="136" height="34" rx="17" fill="#e7983c"/></g>
+<g class="layer l2"><rect class="o" x="64" y="151" width="128" height="26" rx="12" fill="#5b301f"/></g>
+<g class="layer l3"><path class="o" d="M62 129h132l-12 22-42-3-12 12-13-12-42 3z" fill="#ffca34"/></g>
+<g class="layer l4"><rect class="o" x="70" y="108" width="116" height="20" rx="9" fill="#dc3c38"/></g>
+<g class="layer l5"><path class="o" d="M60 91l9-8 9 8 9-8 9 8 9-8 9 8 9-8 9 8 9-8 9 8 9-8 9 8 9-8 9 8v13H60z" fill="#4cb44c"/></g>
+<g class="layer l6">
+  <path class="o" d="M58 79a70 48 0 0 1 140 0v9H58z" fill="#efa240"/>
+  <g fill="#ffe295"><ellipse cx="88" cy="57" rx="5" ry="2"/><ellipse cx="116" cy="45" rx="5" ry="2"/><ellipse cx="148" cy="51" rx="5" ry="2"/><ellipse cx="171" cy="65" rx="5" ry="2"/></g>
+</g>
+</svg>

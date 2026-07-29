@@ -226,11 +226,11 @@ export default function AdminProductEditor() {
                   id="type"
                   value={product.type}
                   onChange={(event) => patchProduct({ type: event.target.value as ProductType })}
-                  className="h-10 w-full rounded-md border border-input bg-white/5 px-3 text-sm text-white"
+                  className="h-10 w-full rounded-md border border-input bg-[#171412] px-3 text-sm text-white"
                 >
-                  <option value="main">Plato principal</option>
-                  <option value="extra">Extra</option>
-                  <option value="drink">Bebida</option>
+                  <option className="bg-[#171412] text-white" value="main">Plato principal</option>
+                  <option className="bg-[#171412] text-white" value="extra">Extra</option>
+                  <option className="bg-[#171412] text-white" value="drink">Bebida</option>
                 </select>
               </Field>
             </div>
