@@ -166,7 +166,7 @@ Esos valores privados viven solo en Apps Script.
 ## 8. Probar
 
 1. Deployar el frontend en Render.
-2. Abrir `/new-menu`.
+2. Abrir `/menu`.
 3. Abrir `/admin`.
 4. Entrar con el `ADMIN_EMAIL` y `ADMIN_PASSWORD` que cargaste en Apps Script.
 5. Crear un producto de prueba escondido.
@@ -176,6 +176,4 @@ Esos valores privados viven solo en Apps Script.
 
 ## Migracion
 
-`/menu` queda intacto. `/new-menu` usa el catalogo dinamico.
-
-Cuando `/new-menu` este probado, el reemplazo final es cambiar la ruta `/menu` para que renderice `NewMenu`.
+`/menu` usa el catalogo dinamico. El codigo del menu hardcodeado queda en el repo como respaldo, pero sin ruta publica.

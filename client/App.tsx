@@ -5,8 +5,7 @@ import { createRoot } from "react-dom/client";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Index from "./pages/Index";
+import { BrowserRouter, Navigate, Routes, Route } from "react-router-dom";
 import NotFound from "./pages/NotFound";
 import Main from "./pages/Main";
 import Form from "./pages/Form";
@@ -24,8 +23,8 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <Routes>
-          <Route path="/menu" element={<Index />} />
-          <Route path="/new-menu" element={<NewMenu />} />
+          <Route path="/menu" element={<NewMenu />} />
+          <Route path="/new-menu" element={<Navigate to="/menu" replace />} />
           <Route path="/admin" element={<AdminProducts />} />
           <Route path="/admin/products/:id" element={<AdminProductEditor />} />
           <Route path="/" element={<Main />} />

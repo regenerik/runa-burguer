@@ -251,11 +251,11 @@ export default function AdminProducts() {
         <div className="flex flex-wrap items-center justify-between gap-3">
           <div>
             <h1 className="text-3xl font-black text-white">Productos</h1>
-            <p className="text-sm text-muted-foreground">Editor paralelo al menu actual. Todavia no reemplaza /menu.</p>
+            <p className="text-sm text-muted-foreground">Editor de productos del menu publico.</p>
           </div>
           <div className="flex flex-wrap gap-2">
             <Button asChild variant="secondary">
-              <Link to="/new-menu">Ver new-menu</Link>
+              <Link to="/menu">Ver menu</Link>
             </Button>
             <Button onClick={() => navigate("/admin/products/new")}>
               <Plus size={16} className="mr-1" /> Agregar producto
