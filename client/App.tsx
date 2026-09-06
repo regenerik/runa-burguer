@@ -8,7 +8,6 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Navigate, Routes, Route } from "react-router-dom";
 import NotFound from "./pages/NotFound";
 import Main from "./pages/Main";
-import Form from "./pages/Form";
 import Cupon from "./pages/Cupon";
 import NewMenu from "./pages/NewMenu";
 import AdminProducts from "./pages/AdminProducts";
@@ -28,8 +27,8 @@ const App = () => (
           <Route path="/admin" element={<AdminProducts />} />
           <Route path="/admin/products/:id" element={<AdminProductEditor />} />
           <Route path="/" element={<Main />} />
-                      <Route path="/form" element={<Form />} />
-            <Route path="/cupon" element={<Cupon />} />
+          <Route path="/form" element={<Navigate to="/" replace />} />
+          <Route path="/cupon" element={<Cupon />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

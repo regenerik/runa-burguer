@@ -11,7 +11,7 @@ export default function Cupon() {
   const celular = location.state?.celular as string;
 
   if (!celular) {
-    return <Navigate to="/form" replace />;
+    return <Navigate to="/" replace />;
   }
 
   const cleanCelular = celular.replace(/\D/g, "");
